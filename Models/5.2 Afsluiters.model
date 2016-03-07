@@ -1,0 +1,38 @@
+{
+    "values": {
+        "inputs": {
+            "VECTORLAYER_SELECTEERPUNTEN": {
+                "values": {
+                    "pos": {
+                        "values": {
+                            "y": 90.0, 
+                            "x": 156.0
+                        }, 
+                        "class": "point"
+                    }, 
+                    "param": {
+                        "values": {
+                            "isAdvanced": false, 
+                            "name": "VECTORLAYER_SELECTEERPUNTEN", 
+                            "shapetype": [
+                                0
+                            ], 
+                            "value": null, 
+                            "exported": null, 
+                            "hidden": false, 
+                            "optional": false, 
+                            "description": "Selecteer punten"
+                        }, 
+                        "class": "processing.core.parameters.ParameterVector"
+                    }
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.ModelerParameter"
+            }
+        }, 
+        "helpContent": {}, 
+        "group": "WSRL", 
+        "name": "5.2 Afsluiters", 
+        "algs": {}
+    }, 
+    "class": "processing.modeler.ModelerAlgorithm.ModelerAlgorithm"
+}

@@ -1,0 +1,1182 @@
+{
+    "values": {
+        "inputs": {
+            "VECTORLAYER_INPUT": {
+                "values": {
+                    "pos": {
+                        "values": {
+                            "y": 68.0, 
+                            "x": 141.0
+                        }, 
+                        "class": "point"
+                    }, 
+                    "param": {
+                        "values": {
+                            "isAdvanced": false, 
+                            "name": "VECTORLAYER_INPUT", 
+                            "shapetype": [
+                                1
+                            ], 
+                            "value": null, 
+                            "exported": null, 
+                            "hidden": false, 
+                            "optional": false, 
+                            "description": "Selecteer lijnen voor vormen duikers"
+                        }, 
+                        "class": "processing.core.parameters.ParameterVector"
+                    }
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.ModelerParameter"
+            }
+        }, 
+        "helpContent": {}, 
+        "group": "WSRL", 
+        "name": "5.1 Duikers", 
+        "algs": {
+            "QGISEXPORTADDGEOMETRYCOLUMNS_1": {
+                "values": {
+                    "name": "QGISEXPORTADDGEOMETRYCOLUMNS_1", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 355.0, 
+                            "x": 792.0
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "INPUT": {
+                            "values": {
+                                "alg": "QGISEXTRACTNODES_1", 
+                                "output": "OUTPUT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "CALC_METHOD": 0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:exportaddgeometrycolumns", 
+                    "description": "Bereken XY coordinaten van de punten"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_18": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_18", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1611.711859237425, 
+                            "x": 520.703862771718
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KWKAFSL3_UIT", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_17", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Afsluitwijze 3 Uitstroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_17": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_17", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1538.9367212812924, 
+                            "x": 520.5557941575771
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KWKAFSL2_UIT", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_16", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Afsluitwijze 2 Uitstroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_16": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_16", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1465.348048654164, 
+                            "x": 523.5173974427139
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KWKAFSL1_UIT", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_15", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Afsluitwijze 1 Uitstroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_15": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_15", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1394.7800943969244, 
+                            "x": 526.1505468345367
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KWKAFSL3_IN", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_14", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Afsluitwijze 3 Instroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_14": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_14", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1310.9074446411753, 
+                            "x": 521.3461322382876
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KWKAFSL2_IN", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_13", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Afsluitwijze 2 Instroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_13": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_13", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1232.9281630110654, 
+                            "x": 524.2718170289575
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KWKAFSL1_IN", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_12", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Afsluitwijze 1 Instroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_12": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_12", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1157.8527198809525, 
+                            "x": 522.3521987797619
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 2, 
+                        "FIELD_NAME": "OPMERKING", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_11", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 100.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Opmerking (optioneel)"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_11": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_11", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1086.929092529762, 
+                            "x": 521.495055922619
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "FIELD_NAME": "KDUMATER", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_10", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 2.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Materiaal van de duiker"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_10": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_10", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 997.5279084077382, 
+                            "x": 522.0759172172619
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "FIELD_NAME": "KDUVORM", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_9", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 2.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Vorm van de duiker"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_1": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_1", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 171.0, 
+                            "x": 335.0
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISSELECTBYEXPRESSION_1", 
+                                "output": "RESULT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 10.0, 
+                        "FORMULA": "$rownum", 
+                        "FIELD_NAME": "IDCODE"
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "KDU"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_3": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_3", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 254.0, 
+                            "x": 777.9609028125001
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISEXTRACTNODES_1", 
+                                "output": "OUTPUT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 3.0, 
+                        "FIELD_LENGTH": 10.0, 
+                        "FORMULA": "$x", 
+                        "FIELD_NAME": "RDX"
+                    }, 
+                    "active": false, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "X-coo\u0308rdinaat ligging binnen onderkant buis instroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_4": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_4", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 301.0, 
+                            "x": 984.0
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_3", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 3.0, 
+                        "FIELD_LENGTH": 10.0, 
+                        "FORMULA": "$y", 
+                        "FIELD_NAME": "RDY"
+                    }, 
+                    "active": false, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "Y-coo\u0308rdinaat ligging binnen onderkant buis instroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_5": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_5", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 157.77455443789069, 
+                            "x": 831.8018210659379
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISEXTRACTNODES_1", 
+                                "output": "OUTPUT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 3.0, 
+                        "FIELD_LENGTH": 10.0, 
+                        "FORMULA": "$x", 
+                        "FIELD_NAME": "XUIT"
+                    }, 
+                    "active": false, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "X-coo\u0308rdinaat ligging binnen onderkant buis uitstroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_6": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_6", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 209.69241573976564, 
+                            "x": 1026.6375436696876
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_5", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 3.0, 
+                        "FIELD_LENGTH": 10.0, 
+                        "FORMULA": "$y", 
+                        "FIELD_NAME": "YUIT"
+                    }, 
+                    "active": false, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "Y-coo\u0308rdinaat ligging binnen onderkant buis uitstroomzijde"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_7": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_7", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1695.8496274869099, 
+                            "x": 516.8005541133946
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_18", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 6.0, 
+                        "FORMULA": "$length", 
+                        "FIELD_NAME": "KDULENGT"
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "Lengte van de duiker in de as van de waterloop"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_8": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_8", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1772.669372021059, 
+                            "x": 517.7122816167752
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 2, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_7", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 10.0, 
+                        "FORMULA": "\"IDCODE\"", 
+                        "FIELD_NAME": "FOTONR"
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "Fotonummer"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISFIELDCALCULATOR_9": {
+                "values": {
+                    "name": "QGISFIELDCALCULATOR_9", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1844.5253939084207, 
+                            "x": 518.4613223828769
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 3, 
+                        "NEW_FIELD": true, 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_8", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 3.0, 
+                        "FIELD_LENGTH": 10.0, 
+                        "FORMULA": "now()", 
+                        "FIELD_NAME": "DATUM"
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:fieldcalculator", 
+                    "description": "Datum van de meting"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISEXTRACTNODES_1": {
+                "values": {
+                    "name": "QGISEXTRACTNODES_1", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 83.0, 
+                            "x": 574.0
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "INPUT": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_1", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:extractnodes", 
+                    "description": "Start en Einpunt aanmaken"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISSELECTBYEXPRESSION_1": {
+                "values": {
+                    "name": "QGISSELECTBYEXPRESSION_1", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 160.62943124999998, 
+                            "x": 113.81739374999995
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": false, 
+                    "dependencies": [], 
+                    "params": {
+                        "LAYERNAME": {
+                            "values": {
+                                "name": "VECTORLAYER_INPUT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromInput"
+                        }, 
+                        "EXPRESSION": "\"LAYER\" = 'co-duiker'", 
+                        "METHOD": 0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:selectbyexpression", 
+                    "description": "Selecteer duikers"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISJOINATTRIBUTESTABLE_1": {
+                "values": {
+                    "name": "QGISJOINATTRIBUTESTABLE_1", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1890.8958463460335, 
+                            "x": 868.9408849152474
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "INPUT_LAYER_2": {
+                            "values": {
+                                "alg": "QGISDELETECOLUMN_3", 
+                                "output": "OUTPUT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "TABLE_FIELD": "IDCODE", 
+                        "TABLE_FIELD_2": "IDCODE", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_9", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:joinattributestable", 
+                    "description": "Koppelen van XY aan vlakken"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISJOINATTRIBUTESTABLE_2": {
+                "values": {
+                    "name": "QGISJOINATTRIBUTESTABLE_2", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 282.77531250000015, 
+                            "x": 1273.0081625000003
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "INPUT_LAYER_2": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_6", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "TABLE_FIELD": "KDUID", 
+                        "TABLE_FIELD_2": "KDUID", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_4", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }
+                    }, 
+                    "active": false, 
+                    "consoleName": "qgis:joinattributestable", 
+                    "description": "Join attributes table"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_9": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_9", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 913.8607863095237, 
+                            "x": 521.0947826636905
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "FIELD_NAME": "KDUAFSBO", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_5", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 2.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Soort afsluitwijze bovenstrooms"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_8": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_8", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 688.603825625, 
+                            "x": 521.0660290625
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 2, 
+                        "FIELD_NAME": "KDUMOEBE", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_7", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 3.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Indicatie front-/vleugelmuur duiker benedenstrooms"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_3": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_3", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 430.90203266858714, 
+                            "x": 528.0694199286452
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KDUHGA1", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_2", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Inwendige hoogte"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_2": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_2", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 351.86167800453495, 
+                            "x": 532.4149659863945
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KDUBREED", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_1", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 1.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Inwendige breedte"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_1": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_1", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 280.1496598639457, 
+                            "x": 533.6190476190474
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 2, 
+                        "FIELD_NAME": "KDUIDENT", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISFIELDCALCULATOR_1", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 10.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Duiker ID, aangeleverd door waterschap"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_7": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_7", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 613.498699375, 
+                            "x": 519.7897475
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KDUBOKBE", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_6", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 3.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "De hoogte van de binnen onderkant van de duikerconstructie benedenstrooms"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_6": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_6", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 511.31537875000004, 
+                            "x": 519.7897475
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KDUBOKBO", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_3", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "De hoogte van de binnen onderkant van de duikerconstructie bovenstrooms"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_5": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_5", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 839.013076175595, 
+                            "x": 523.4186832738095
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 0, 
+                        "FIELD_NAME": "KDUAFSBE", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_4", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 0.0, 
+                        "FIELD_LENGTH": 2.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "Soort afsluitwijze benedenstrooms"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISADDFIELDTOATTRIBUTESTABLE_4": {
+                "values": {
+                    "name": "QGISADDFIELDTOATTRIBUTESTABLE_4", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 759.7084964434524, 
+                            "x": 523.0377308928571
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "FIELD_TYPE": 1, 
+                        "FIELD_NAME": "KDUBOKBE", 
+                        "INPUT_LAYER": {
+                            "values": {
+                                "alg": "QGISADDFIELDTOATTRIBUTESTABLE_8", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }, 
+                        "FIELD_PRECISION": 2.0, 
+                        "FIELD_LENGTH": 5.0
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:addfieldtoattributestable", 
+                    "description": "De hoogte van de binnen onderkant van de duikerconstructie benedenstrooms"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISDELETECOLUMN_4": {
+                "values": {
+                    "name": "QGISDELETECOLUMN_4", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 1944.8958463460335, 
+                            "x": 1100.9823216550258
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "COLUMN": "idcode_2", 
+                        "INPUT": {
+                            "values": {
+                                "alg": "QGISJOINATTRIBUTESTABLE_1", 
+                                "output": "OUTPUT_LAYER"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:deletecolumn", 
+                    "description": "Verwijder kolom KWKID_2"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISDELETECOLUMN_5": {
+                "values": {
+                    "name": "QGISDELETECOLUMN_5", 
+                    "paramsFolded": true, 
+                    "outputs": {
+                        "OUTPUT": {
+                            "values": {
+                                "description": "gw_kdu", 
+                                "pos": {
+                                    "values": {
+                                        "y": 2028.0423921315319, 
+                                        "x": 1564.6871175196047
+                                    }, 
+                                    "class": "point"
+                                }
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ModelerOutput"
+                        }
+                    }, 
+                    "pos": {
+                        "values": {
+                            "y": 2001.0423921315319, 
+                            "x": 1330.6871175196047
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "COLUMN": "LAYER", 
+                        "INPUT": {
+                            "values": {
+                                "alg": "QGISDELETECOLUMN_4", 
+                                "output": "OUTPUT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:deletecolumn", 
+                    "description": "Kolom LAYER verwijderen"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }, 
+            "QGISDELETECOLUMN_3": {
+                "values": {
+                    "name": "QGISDELETECOLUMN_3", 
+                    "paramsFolded": true, 
+                    "outputs": {}, 
+                    "pos": {
+                        "values": {
+                            "y": 406.4822750000001, 
+                            "x": 1235.6715125
+                        }, 
+                        "class": "point"
+                    }, 
+                    "outputsFolded": true, 
+                    "dependencies": [], 
+                    "params": {
+                        "COLUMN": "LAYER", 
+                        "INPUT": {
+                            "values": {
+                                "alg": "QGISEXPORTADDGEOMETRYCOLUMNS_1", 
+                                "output": "OUTPUT"
+                            }, 
+                            "class": "processing.modeler.ModelerAlgorithm.ValueFromOutput"
+                        }
+                    }, 
+                    "active": true, 
+                    "consoleName": "qgis:deletecolumn", 
+                    "description": "Verwijder kolom Layer"
+                }, 
+                "class": "processing.modeler.ModelerAlgorithm.Algorithm"
+            }
+        }
+    }, 
+    "class": "processing.modeler.ModelerAlgorithm.ModelerAlgorithm"
+}
